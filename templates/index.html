@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Utils</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      border-bottom: 2px solid #343a40;
+      background-color: #007bff;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      font-size: 18px;
+    }
+
+    .jumbotron {
+      background-color: #343a40;
+      color: #fff;
+      padding: 80px 20px;
+      margin-bottom: 0;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+    }
+
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border-color: #c3e6cb;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Text Utils</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/abhayjot39/?next=%2F">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:asingh7_be22@thapar.edu">mail us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Text Utils</h1>
+    <p class="lead">Do anything with your text</p>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Text Processing</h5>
+            <!-- ... (previous code) ... -->
+
+<form action='/analyze' method='get'>
+    <div class="mb-3">
+        <label for="inputText" class="form-label">Enter your text:</label>
+        <textarea class="form-control" id="inputText" name="text" rows="5"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="removePunc" name="remove_punc">
+        <label class="form-check-label" for="removePunc">Remove Punctuations</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="capitalize" name="capitalize">
+        <label class="form-check-label" for="capitalize">Full Caps</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="convertLowercase" name="convert_lowercase">
+        <label class="form-check-label" for="convertLowercase">Convert to Lowercase</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="titleCase" name="title_case">
+        <label class="form-check-label" for="titleCase">Title Case</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Analyze Text</button>
+</form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+  <strong>Awesome!</strong> You're exploring the cool features of Text Utils.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+  <div class="footer mt-4">
+    <p>&copy; 2024 Text Utils. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjV
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>
